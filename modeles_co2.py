@@ -45,7 +45,7 @@ def app(df):
     st.markdown("""
     Voici ci-dessous les résultats obtenus sur le jeu de test pour les différents modèles :
     """)
-    resultats = plt.imread('https://github.com/bruhua/vehicules_co2/blob/05dc427b342071ca90d5e4bce9876dc34a7f6775/Dataframe/Perfo_modeles.png')
+    resultats = plt.imread('https://raw.githubusercontent.com/bruhua/vehicules_co2/a68b5e7e52350957e015b362b0bfe9e538fb616c/Dataframe/Perfo_modeles.png')
     st.image(resultats)
 
     st.subheader('Comparaison des émissions de CO2 réelles et prédites')
@@ -55,7 +55,7 @@ def app(df):
     plus le modèle est performant.
     \nVoici le graphique réalisé à partir des prédictions du modèle Random Forest :
     """)
-    comparaison = plt.imread('https://github.com/bruhua/vehicules_co2/blob/05dc427b342071ca90d5e4bce9876dc34a7f6775/Dataframe/Comparaison_CO2_reel_predit.png')
+    comparaison = plt.imread('https://raw.githubusercontent.com/bruhua/vehicules_co2/a68b5e7e52350957e015b362b0bfe9e538fb616c/Dataframe/Comparaison_CO2_reel_predit.png')
     st.image(comparaison)
     st.markdown("""
     On constate que les points se trouvent majoritairement le long de la ligne y = x, 
