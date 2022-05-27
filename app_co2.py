@@ -30,7 +30,7 @@ PAGES = {
 # Fonction pour charger les données
 @st.cache
 def load_data():
-    df = pd.read_csv(os.path.join('https://raw.githubusercontent.com/bruhua/vehicules_co2/main/Dataframe/master_data_2014.csv'), index_col = 0)
+    df = pd.read_csv('https://raw.githubusercontent.com/bruhua/vehicules_co2/main/Dataframe/master_data_2014.csv', index_col = 0)
     return df
 # Chargement des données
 df = load_data()
