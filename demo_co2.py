@@ -126,7 +126,7 @@ def prediction (option_modele, X_test_scaled):
 
 
 # Page de démonstration
-def app(df, data_path):
+def app(df):
     st.title("Démonstration")
     st.markdown("""
     Sur cette page, vous pouvez saisir l'URL d'une page du site internet "LaCentrale" correspondant à la fiche technique d'un véhicule.
