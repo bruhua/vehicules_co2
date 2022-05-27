@@ -54,4 +54,4 @@ st.sidebar.markdown("""<hr style="height:2px;color:#333;background-color:#333;" 
 st.sidebar.markdown("Auteurs :")
 st.sidebar.markdown("Jian Hu  \nBruno Huart  \nEmilie Pottiez")
 st.sidebar.markdown("""<hr style="height:2px;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
-st.sidebar.markdown("Projet DS  \nPromotion Continue Juillet 2021")
+st.sidebar.markdown("Projet DS  \nPromotion Juillet 2021")
