@@ -162,39 +162,42 @@ def app(df):
 
     # Affichage des résultats
     st.subheader('Résultat prédit par le modèle')
-    st.write("Vous avez choici ce véhicule :")
+    st.write("")
+    if (st.button('JE VALIDE ')):
+    
+        st.write("Vous avez choisi ce véhicule :")
 
-    # Récupération de l'image du véhicule
-    image_tags = soup.find_all('img', class_='noBold italic block max100 imgModelCom')
-    links = []
-    for image_tag in image_tags:
-        links.append(image_tag['src'])
-    urllib.request.urlretrieve(links[0], ".jpg")
-    # Affichage
-    dimensions = (260, 370)
-    i = Image.open('.jpg')
-    i.thumbnail(dimensions)
-    st.image(i)
+        # Récupération de l'image du véhicule
+        image_tags = soup.find_all('img', class_='noBold italic block max100 imgModelCom')
+        links = []
+        for image_tag in image_tags:
+            links.append(image_tag['src'])
+        urllib.request.urlretrieve(links[0], ".jpg")
+        # Affichage
+        dimensions = (260, 370)
+        i = Image.open('.jpg')
+        i.thumbnail(dimensions)
+        st.image(i)
 
-    # On fait tourner le modèle si les données récupérées sont ok
-    if X_test_scaled.size != 0:
-        # Création et entraînement du modèle
-        #clf = fit_model(option_modele, X_train_scaled, y_train)
+        # On fait tourner le modèle si les données récupérées sont ok
+        if X_test_scaled.size != 0:
+            # Création et entraînement du modèle
+            #clf = fit_model(option_modele, X_train_scaled, y_train)
 
-        # Prédiction du modèle
-        #y_pred = clf.predict(X_test_scaled)
+            # Prédiction du modèle
+            #y_pred = clf.predict(X_test_scaled)
 
-        # Calcul de la prédiction
-        y_pred = prediction(option_modele,X_test_scaled)
+            # Calcul de la prédiction
+            y_pred = prediction(option_modele,X_test_scaled)
 
-        st.write("L'émission de CO2 prédite par ce modèle pour ce type de véhicule est :", round(y_pred.item(), 2),
-                 "g/km.")
-
-        if co2_test[0] == 'NC' :
-            st.write("L'émission de CO2 réelle n'est pas communiquée sur la fiche technique du site \"LaCentrale\"")
-        else :
-            st.write("L'émission de CO2 réelle (donnée sur la fiche technique du site \"LaCentrale\" ) est :", co2_test[0],
+            st.write("L'émission de CO2 prédite par ce modèle pour ce type de véhicule est :", round(y_pred.item(), 2),
                      "g/km.")
 
-    else:
-        st.warning("Il manque des données sur cette page ! Impossible de réaliser une prédiction.")
+            if co2_test[0] == 'NC' :
+                st.write("L'émission de CO2 réelle n'est pas communiquée sur la fiche technique du site \"LaCentrale\"")
+            else :
+                st.write("L'émission de CO2 réelle (donnée sur la fiche technique du site \"LaCentrale\" ) est :", co2_test[0],
+                         "g/km.")
+
+        else:
+            st.warning("Il manque des données sur cette page ! Impossible de réaliser une prédiction.")
