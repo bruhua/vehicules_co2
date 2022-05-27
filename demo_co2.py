@@ -160,10 +160,12 @@ def app(df):
     # Pré-processing des données de test
     X_test_scaled, co2_test = preprocess_data_test(soup, preprocessor)
 
-    # Affichage des résultats
-    st.subheader('Résultat prédit par le modèle')
-    st.write("")
+    
     if (st.button('JE VALIDE ')):
+        # Affichage des résultats
+        st.subheader('Résultat prédit par le modèle')
+        st.write("")
+
     
         st.write("Vous avez choisi ce véhicule :")
 
