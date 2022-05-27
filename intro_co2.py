@@ -8,7 +8,7 @@ def app(df):
     st.title("Prédiction des émissions de CO2 par les véhicules homologués en France")
 
     # Affichage du logo du pojet
-    logo = plt.imread('https://github.com/bruhua/vehicules_co2/blob/47967907d2bd864becb10503d58929a8c8922297/Dataframe/malus-auto-wltp.jpg')
+    logo = plt.imread("https://github.com/bruhua/vehicules_co2/blob/47967907d2bd864becb10503d58929a8c8922297/Dataframe/malus-auto-wltp.jpg")
     col1, col2, col3 = st.columns([1, 2, 1])
     with col1:
        st.write("")
