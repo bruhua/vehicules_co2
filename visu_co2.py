@@ -29,7 +29,7 @@ def app(df):
 
     st.markdown("Voici la heatmap des corrélations :")
 
-    graph_correlation = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/graph_correlation.png")
+    graph_correlation = plt.imread("https://raw.githubusercontent.com/bruhua/vehicules_co2/main/Dataframe/graph_correlation.png")
     st.image(graph_correlation)
 
 
@@ -44,25 +44,25 @@ def app(df):
 
     st.write("Relation entre la puissance maximale et l'émission de CO2 :")
 
-    croisement_puissance_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_puissance_co2.png")
+    croisement_puissance_co2 = plt.imread("https://raw.githubusercontent.com/bruhua/vehicules_co2/main/Dataframe/croisement_puissance_co2.png")
     st.image(croisement_puissance_co2)
 
 
 
     st.write("Relation entre la consommation extra-urbaine et l'émission de CO2 :")
 
-    croisement_conso_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_conso_co2.png")
+    croisement_conso_co2 = plt.imread("https://raw.githubusercontent.com/bruhua/vehicules_co2/main/Dataframe/croisement_conso_co2.png")
     st.image(croisement_conso_co2)
 
 
 
     st.write("Relation entre la masse à vide et l'émission de CO2 :")
 
-    croisement_masse_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_masse_co2.png")
+    croisement_masse_co2 = plt.imread("https://raw.githubusercontent.com/bruhua/vehicules_co2/main/Dataframe/croisement_masse_co2.png")
     st.image(croisement_masse_co2)
 
     st.write("Relation entre la gamme et l'émission de CO2 :")
 
-    croisement_gamme_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_gamme_co2.png ")
+    croisement_gamme_co2 = plt.imread("https://raw.githubusercontent.com/bruhua/vehicules_co2/main/Dataframe/croisement_gamme_co2.png")
     st.image(croisement_gamme_co2)
 
