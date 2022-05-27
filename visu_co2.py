@@ -1,12 +1,11 @@
 import streamlit as st
-from math import pi
 import matplotlib.pyplot as plt
 import os
 
 
 
 # Page de visualisation des données
-def app(df, data_path):
+def app(df):
     st.title("Visualisation des données")
     st.markdown("""
     Cette page présente quelques visualisations choisies du jeu de données afin de mieux appréhender le lien 
@@ -30,7 +29,7 @@ def app(df, data_path):
 
     st.markdown("Voici la heatmap des corrélations :")
 
-    graph_correlation = plt.imread(os.path.join(data_path, "graph_correlation.PNG"))
+    graph_correlation = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/graph_correlation.png")
     st.image(graph_correlation)
 
 
@@ -45,25 +44,25 @@ def app(df, data_path):
 
     st.write("Relation entre la puissance maximale et l'émission de CO2 :")
 
-    croisement_puissance_co2 = plt.imread(os.path.join(data_path, "croisement_puissance_co2.PNG"))
+    croisement_puissance_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_puissance_co2.png")
     st.image(croisement_puissance_co2)
 
 
 
     st.write("Relation entre la consommation extra-urbaine et l'émission de CO2 :")
 
-    croisement_conso_co2 = plt.imread(os.path.join(data_path, "croisement_conso_co2.PNG"))
+    croisement_conso_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_conso_co2.png")
     st.image(croisement_conso_co2)
 
 
 
     st.write("Relation entre la masse à vide et l'émission de CO2 :")
 
-    croisement_masse_co2 = plt.imread(os.path.join(data_path, "croisement_masse_co2.PNG"))
+    croisement_masse_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_masse_co2.png")
     st.image(croisement_masse_co2)
 
     st.write("Relation entre la gamme et l'émission de CO2 :")
 
-    croisement_gamme_co2 = plt.imread(os.path.join(data_path, "croisement_gamme_co2.PNG"))
+    croisement_gamme_co2 = plt.imread("https://github.com/bruhua/vehicules_co2/blob/faf6bffa3baa5910bbe9cd80619cd0eb04fa58cb/Dataframe/croisement_gamme_co2.png ")
     st.image(croisement_gamme_co2)
 
