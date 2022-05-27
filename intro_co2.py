@@ -1,21 +1,20 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import os
-import cv2
 
 # Page d'introduction
 def app(df):
     st.title("Prédiction des émissions de CO2 par les véhicules homologués en France")
 
     # Affichage du logo du pojet
-    logo = cv2.imread("https://github.com/bruhua/vehicules_co2/blob/47967907d2bd864becb10503d58929a8c8922297/Dataframe/malus-auto-wltp.jpg")
-    col1, col2, col3 = st.columns([1, 2, 1])
-    with col1:
-       st.write("")
-    with col2:
-       st.image(logo)
-    with col3:
-       st.write("")
+    #logo = plt.imread("https://github.com/bruhua/vehicules_co2/blob/47967907d2bd864becb10503d58929a8c8922297/Dataframe/malus-auto-wltp.jpg")
+    #col1, col2, col3 = st.columns([1, 2, 1])
+    #with col1:
+    #   st.write("")
+    #with col2:
+    #   st.image(logo)
+   # with col3:
+   #    st.write("")
 
     st.subheader("Contexte")
     st.markdown("""
