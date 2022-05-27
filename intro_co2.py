@@ -4,7 +4,7 @@ import os
 
 
 # Page d'introduction
-def app(df, data_path):
+def app(df):
     st.title("Prédiction des émissions de CO2 par les véhicules homologués en France")
 
     # Affichage du logo du pojet
