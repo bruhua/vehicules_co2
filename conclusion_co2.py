@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page de conclusion
-def app(df, data_path):
+def app(df):
     st.title("Conclusion")
 
     st.subheader('Résultats obtenus')
