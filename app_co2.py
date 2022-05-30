@@ -52,6 +52,6 @@ page.app(df)
 
 st.sidebar.markdown("""<hr style="height:2px;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 st.sidebar.markdown("Auteurs :")
-st.sidebar.markdown("[Jian Hu](https://www.linkedin.com/in/jian-hu-a7933687/)  \nBruno Huart  \nEmilie Pottiez")
+st.sidebar.markdown("[Jian Hu](https://www.linkedin.com/in/jian-hu-a7933687/)  \n[Bruno Huart](https://www.linkedin.com/in/bruno-huart-051459107/)  \n[Emilie Pottiez](https://www.linkedin.com/in/emilie-pottiez-776679216/)")
 st.sidebar.markdown("""<hr style="height:2px;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 st.sidebar.markdown("Projet DS  \nPromotion Juillet 2021")
