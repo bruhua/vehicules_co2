@@ -129,7 +129,7 @@ def prediction (option_modele, X_test_scaled):
 def app(df):
     st.title("Démonstration")
     st.markdown("""
-    Sur cette page, vous pouvez saisir l'URL d'une page du site "[La Centrale]("https://www.lacentrale.fr/fiche-technique-auto.php")" correspondant à la fiche technique d'un véhicule.
+    Sur cette page, vous pouvez saisir l'URL d'une page du site "[La Centrale](https://www.lacentrale.fr/fiche-technique-auto.php)" correspondant à la fiche technique d'un véhicule.
     Vous pouvez également choisir un modèle de Machine Learning.
     \nSi toutes les données nécessaires sont disponibles dans la fiche technique, le modèle sélectionné effectuera une prédiction de 
     l'émission de CO2 émise par le véhicule choisi.
