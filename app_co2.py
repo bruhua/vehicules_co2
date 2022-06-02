@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import pandas as pd
 from joblib import dump, load
-pip install typing_extensions
 from typing_extensions import Required
 
 import intro_co2
