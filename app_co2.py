@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import pandas as pd
 from joblib import dump, load
+from typing_extensions import Required
 
 import intro_co2
 import visu_co2
