@@ -47,7 +47,7 @@ dt_reg = load('dt_reg.joblib')
 st.sidebar.title('Emissions de CO2 des véhicules homologués')
 
 # Choix de la page
-selection = st.sidebar.radio("Menu ", (list(PAGES.keys())),  key=range(0,4) )
+selection = st.sidebar.radio("Menu ", (list(PAGES.keys())),  key=range(0,5) )
 page = PAGES[selection]
 page.app(df)
 
